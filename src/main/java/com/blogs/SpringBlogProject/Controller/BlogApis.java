@@ -19,11 +19,11 @@ public class BlogApis {
     public String getAllBlogs(Model model){
 
         List<Blog> blogs = b1.findAll();
-//        Debugging purpose
-//        System.out.println("================================");
-//        System.out.println("Blogs found: " + blogs.size());
-//        System.out.println(blogs);
-//        System.out.println("================================");
+    //    Debugging purpose
+       System.out.println("================================");
+       System.out.println("Blogs found: " + blogs.size());
+       System.out.println(blogs);
+       System.out.println("================================");
 
         model.addAttribute("blogs", blogs);
 
