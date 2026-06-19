@@ -39,6 +39,8 @@ public class BlogApis {
     }
 
     @PostMapping("/save")
+
+    
     public String saveBlog(@ModelAttribute("blog") Blog blog){
         b1.save(blog);
         return "redirect:/";
